@@ -2,13 +2,13 @@
 @media screen and (min-width: 1023px){
     body{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10vh 5vh 10vh 50vh 50vh 50vh 10vh;
+        grid-template-columns:0.5fr 1fr 0.25fr 1fr 0.25fr 1fr 0.5fr;
+        grid-template-rows: 10vh 5vh 10vh 50vh 50vh 10vh;
         font-family: Itim;
     }
     header{
         grid-row: 1/2;
-        grid-column: 1/6;
+        grid-column: 1/8;
         display: flex;
         background-color: #AEAEAE;
         justify-content: space-around;
@@ -34,11 +34,6 @@
         background-color: #D9D9D9;
         border-radius: 10px;
     }
-    header>img:hover{
-        box-shadow: 5px 5px 10px rgba(109, 109, 109, 0.5);
-        cursor: pointer;
-    }
-
 
 
     #ProductHeader{
@@ -48,7 +43,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         grid-row: 3/4;
-        grid-column: 1/6;
+        grid-column: 1/8;
     }
     #ProductHeader>h1{
         background-color: #D9D9D9;
@@ -64,7 +59,12 @@
         background-color: #D9D9D9;
         display: flex;
         flex-direction: column;
-        margin-top: 3vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 27px;
+        align-self: center;
     }
     .Products>img{
         display: flex;
@@ -72,16 +72,81 @@
         align-self: center;
         max-width: 80%;
         padding-top: 4vh;
+        max-height: 28vh;
     }
     .Products>h2{
         align-self: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        background-color: #AEAEAE;
+        border-radius: 15px;
+        padding-left: 5px;
+        padding: 5px;
     }
+
     #SnacklePringles{
         grid-row: 4/5;
         grid-column: 2/3;
         min-width: 0;
         min-height: 0;
     }
+    #SnackleHershy{
+        grid-row: 4/5;
+        grid-column: 4/5;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleBaskin{
+        grid-row: 4/5;
+        grid-column: 6/7;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleChupa{
+        grid-row: 5/6;
+        grid-column: 2/3;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleChicken{
+        grid-row: 5/6;
+        grid-column: 4/5;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleSauce{
+        grid-row: 5/6;
+        grid-column: 6/7;
+        min-width: 0;
+        min-height: 0;
+    }
+    footer{
+        margin-top: 1vh;
+        grid-row: 6/7;
+        grid-column: 1/8;
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-radius: 12px;
+        flex-direction: row;
+    }
+    footer>h1{
+        padding-top: 0.2vh;
+        padding-bottom: 0.2vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        align-self: center;
+    }
+    a:link{
+        color: #0090EA;;
+    }
+
+}
+.Button:hover{
+    box-shadow: 5px 5px 10px rgba(109, 109, 109, 0.5);
+    cursor: pointer;
 }
