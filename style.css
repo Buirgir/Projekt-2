@@ -1,4 +1,295 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@media screen and (max-width: 767px){
+    body{
+        display:flex;
+        flex-direction: column;
+        font-family: Itim;
+    }
+    header{
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-radius: 20px;
+        flex-direction: row;
+        position: sticky;
+        top: 5px;
+        max-height: 10vh;
+    }
+    header>h1{
+        background-color: #D9D9D9;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-radius: 15px;
+        align-self: center;
+        font-size: x-large;
+    }
+    header>img{
+        display: flex;
+        justify-content: stretch;
+        max-width: 15px;
+        max-height: 15px;
+        align-self: center;
+        padding: 10px;
+        margin: 1.2vh;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+    }
+
+    #ProductSection{
+        margin-top: 20px;
+        background-color: #D9D9D9;
+        border-radius: 15px;
+    }
+    #ProductHeader{
+        background-color:#AEAEAE;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-top: 0;
+    }
+    #ProductHeader>h1{
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .Products{
+        background-color: #AEAEAE;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 27px;
+        align-self: center;
+    }
+    .Products>img{
+        display: flex;
+        justify-content:stretch;
+        align-self: center;
+        max-width: 80%;
+        padding-top: 4vh;
+        max-height: 28vh;
+    }
+    .Products>h2{
+        align-self: center;
+        margin-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        background-color: #D9D9D9;
+        border-radius: 15px;
+        padding-left: 5px;
+        padding: 5px;
+    }
+
+    #SnacklePringles{
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleHershy{
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleBaskin{
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleChupa{
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleChicken{
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleSauce{
+        min-width: 0;
+        min-height: 0;
+    }
+    footer{
+        display: block;
+        margin-top: 1vh;
+        background-color: #AEAEAE;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    footer>h1{
+        padding-top: 0.2vh;
+        padding-bottom: 0.2vh;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+    }
+    a:link{
+        color: #0090EA;;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1022px){
+    body{
+        display:grid;
+        grid-template-columns:0.25fr 2fr 0.25fr 2fr 0.25fr 2fr 0.25fr;
+        grid-template-rows: 5vh 5vh 5vh 35vh 35vh 8vh;
+        font-family: Itim;
+    }
+    header{
+        grid-row: 1/2;
+        grid-column: 1/8;
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-radius: 12px;
+        flex-direction: row;
+        position: sticky;
+        top: 5px
+    }
+    header>h1{
+        background-color: #D9D9D9;
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-bottom: 0.25vh;
+        padding-top: 0.25vh;
+        border-radius: 10px;
+        align-self: center;
+        font-size: xx-large;
+    }
+    header>img{
+        display: flex;
+        justify-content: stretch;
+        padding: 0.25vh;
+        margin: 0.9vh;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+    }
+
+    #ProductSection{
+        grid-column: 1/8;
+        grid-row: 3/7;
+        background-color: #D9D9D9;
+        border-radius: 15px;
+    }
+    #ProductHeader{
+        background-color:#AEAEAE;
+        display: flex;
+        justify-content: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        grid-row: 3/4;
+        grid-column: 1/8;
+        padding-top: 0;
+    }
+    #ProductHeader>h1{
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .Products{
+        background-color: #AEAEAE;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 27px;
+        align-self: center;
+    }
+    .Products>img{
+        display: flex;
+        justify-content:stretch;
+        align-self: center;
+        max-width: 80%;
+        padding-top: 4vh;
+        max-height: 28vh;
+    }
+    .Products>h2{
+        align-self: center;
+        margin-top: 8px;
+        padding-bottom: 8px;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+        background-color: #D9D9D9;
+        border-radius: 15px;
+        padding-left: 5px;
+        padding: 5px;
+        font-size: xx-large;
+    }
+
+    #SnacklePringles{
+        grid-row: 4/5;
+        grid-column: 2/3;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleHershy{
+        grid-row: 4/5;
+        grid-column: 4/5;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleBaskin{
+        grid-row: 4/5;
+        grid-column: 6/7;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleChupa{
+        grid-row: 5/6;
+        grid-column: 2/3;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleChicken{
+        grid-row: 5/6;
+        grid-column: 4/5;
+        min-width: 0;
+        min-height: 0;
+    }
+    #SnackleSauce{
+        grid-row: 5/6;
+        grid-column: 6/7;
+        min-width: 0;
+        min-height: 0;
+    }
+    footer{
+        margin-top: 1vh;
+        grid-row: 6/7;
+        grid-column: 1/8;
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        flex-direction: row;
+        font-size: medium;
+    }
+    footer>h1{
+        padding-top: 0.6vh;
+        padding-bottom: 0.6vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+        align-self: center;
+    }
+    a:link{
+        color: #0090EA;;
+    }
+
+}
 @media screen and (min-width: 1023px){
     body{
         display:grid;

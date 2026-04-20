@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@media screen and (max-width: 767px){
+    body{
+        display:flex;
+        flex-direction: column;
+        font-family: Itim;
+    }
+    header{
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-radius: 20px;
+        flex-direction: row;
+        position: sticky;
+        top: 5px;
+        max-height: 10vh;
+    }
+    header>h1{
+        background-color: #D9D9D9;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-radius: 15px;
+        align-self: center;
+        font-size: x-large;
+    }
+    header>img{
+        display: flex;
+        justify-content: stretch;
+        max-width: 15px;
+        max-height: 15px;
+        align-self: center;
+        padding: 10px;
+        margin: 1.2vh;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1022px){
+    body{
+        display:grid;
+        grid-template-columns:0.25fr 2fr 0.25fr 2fr 0.25fr 2fr 0.25fr;
+        grid-template-rows: 5vh 5vh 5vh 35vh 35vh 8vh;
+        font-family: Itim;
+    }
+    header{
+        grid-row: 1/2;
+        grid-column: 1/8;
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-radius: 12px;
+        flex-direction: row;
+        position: sticky;
+        top: 5px
+    }
+    header>h1{
+        background-color: #D9D9D9;
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-bottom: 0.25vh;
+        padding-top: 0.25vh;
+        border-radius: 10px;
+        align-self: center;
+        font-size: xx-large;
+    }
+    header>img{
+        display: flex;
+        justify-content: stretch;
+        padding: 0.25vh;
+        margin: 0.9vh;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1023px){
+    body{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 80vh 10vh;
+        font-family: Itim;
+    }
+    header{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        display: flex;
+        background-color: #AEAEAE;
+        justify-content: space-around;
+        border-radius: 12px;
+        flex-direction: row;
+        position: sticky;
+        top: 5px
+    }
+    header>h1{
+        background-color: #D9D9D9;
+        padding-right: 33%;
+        padding-left: 33%;
+        padding-bottom: 0.8vh;
+        padding-top: 0.8vh;
+        border-radius: 10px;
+        align-self: center;
+    }
+    header>img{
+        display: flex;
+        justify-content: stretch;
+        padding: 1vh;
+        margin: 1.2vh;
+        background-color: #D9D9D9;
+        border-radius: 10px;
+    }
+}
+
+
+
+.Button:hover{
+    box-shadow: 5px 5px 10px rgba(109, 109, 109, 0.5);
+    cursor: pointer;
+}
