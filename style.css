@@ -136,13 +136,13 @@
 @media screen and (min-width: 767px) and (max-width: 1022px){
     body{
         display:grid;
-        grid-template-columns:0.25fr 2fr 0.25fr 2fr 0.25fr 2fr 0.25fr;
-        grid-template-rows: 5vh 5vh 5vh 35vh 35vh 8vh;
+        grid-template-columns:0.25fr 2fr 0.25fr 2fr 0.25fr;
+        grid-template-rows: 5vh 5vh 5vh 50vh 50vh 50vh 8vh;
         font-family: Itim;
     }
     header{
         grid-row: 1/2;
-        grid-column: 1/8;
+        grid-column: 1/6;
         display: flex;
         background-color: #AEAEAE;
         justify-content: space-around;
@@ -171,7 +171,7 @@
     }
 
     #ProductSection{
-        grid-column: 1/8;
+        grid-column: 1/6;
         grid-row: 3/7;
         background-color: #D9D9D9;
         border-radius: 15px;
@@ -183,7 +183,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         grid-row: 3/4;
-        grid-column: 1/8;
+        grid-column: 1/6;
         padding-top: 0;
     }
     #ProductHeader>h1{
@@ -193,8 +193,10 @@
         padding-right: 30%;
         padding-bottom: 5px;
         padding-top: 5px;
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: center;
+        font-size: x-large;
     }
     .Products{
         background-color: #AEAEAE;
@@ -241,8 +243,8 @@
         min-height: 0;
     }
     #SnackleBaskin{
-        grid-row: 4/5;
-        grid-column: 6/7;
+        grid-row: 6/7;
+        grid-column: 2/3;
         min-width: 0;
         min-height: 0;
     }
@@ -259,26 +261,26 @@
         min-height: 0;
     }
     #SnackleSauce{
-        grid-row: 5/6;
-        grid-column: 6/7;
+        grid-row: 6/7;
+        grid-column: 4/5;
         min-width: 0;
         min-height: 0;
     }
     footer{
         margin-top: 1vh;
-        grid-row: 6/7;
-        grid-column: 1/8;
+        grid-row: 7/8;
+        grid-column: 1/6;
         display: flex;
         background-color: #AEAEAE;
-        justify-content: space-around;
+        justify-content: center;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         flex-direction: row;
-        font-size: medium;
+        font-size: smaller;
     }
     footer>h1{
-        padding-top: 0.6vh;
-        padding-bottom: 0.6vh;
+        padding-top: 0.3vh;
+        padding-bottom: 0.3vh;
         padding-left: 10%;
         padding-right: 10%;
         background-color: #D9D9D9;
