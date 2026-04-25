@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Varukorg</title>
     <link rel="stylesheet" href="Checkout_style.css">
     <script defer src="scripts.js"></script>
 </head>
 <body onload="loadCart(), totalPrice()">
     <header>
-        <h1 class="Button" onclick="toOtherPage('index.html')">Stuffed animal club</h1>
+        <h1 class="Button" onclick="toOtherPage('index.html')">Gossedjurs Klubben</h1>
         <!--<button type="button"><img src="./img/ShoppingCart.webp" alt="Cart"></button>-->
         <img class="Button" src="./img/Search.webp" alt="Search" onclick="test()">
         <img class="Button" src="./img/ShoppingCart.webp" alt="Cart" onclick="test()">
     </header>
     <div id="CartHeader">
-        <h1>Cart</h1>
+        <h1>Varukorg</h1>
     </div>
     <div id="CartSection">
     </div>
     <div id="CheckoutHeader">
-        <h1>Checkout</h1>
+        <h1>Betalning</h1>
     </div>
     <div id="CheckoutSection">
         <div id="stats">
-            <h1>Subtotal</h1>
-            <h2>Shipping: Calculated at next step</h2>
-            <h2>Tax: 67kr</h2>
+            <h1>Prisuträkning</h1>
+            <h2>Frakt: Calculated at next step</h2>
+            <h2>Skatt: 67kr</h2>
         </div>
-        <h1 class="Button" id="buyButton">Buy</h1>
+        <h1 class="Button" id="buyButton">Köp</h1>
     </div>
     <footer>
-        <h1>For support contact: <a href="mailto:Noreply@lindhardsen.org">Noreply@lindhardsen.org</a></h1>
+        <h1>För hjälp kontakta: <a href="mailto:Noreply@lindhardsen.org">Noreply@lindhardsen.org</a></h1>
     </footer>
 </body>
 </html>

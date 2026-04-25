@@ -1,67 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stuffed Animal Club</title>
+    <title>Gossedjurs Klubben</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="scripts.js"></script>
 </head>
-<body>
+<body  onload="updateCartAmount()">
     <header>
-        <h1>Stuffed animal club</h1>
+        <h1>Gossedjurs Klubben</h1>
         <!--<button type="button"><img src="./img/ShoppingCart.webp" alt="Cart"></button>-->
-        <img class="Button" src="./img/Search.webp" alt="Search" onclick="test()">
-        <img class="Button" src="./img/ShoppingCart.webp" alt="Cart" onclick="toOtherPage('Checkout.html')">
+        <img class="Button" src="./img/Search.webp" alt="sök" onclick="test()">
+        <img class="Button" id="cartIcon" src="./img/ShoppingCart.webp" alt="Varukorg" onclick="toOtherPage('Checkout.html')">
     </header>
         <div id="ProductSection"></div>
         <div id="ProductHeader">
-            <h1>Products</h1>
+            <h1>Produkter</h1>
         </div>
-            <div id="SnacklePringles">
+            <div id="Kaningossedjur">
                 <div class="Products">
-                    <img src="./img/Pringles.webp" alt="Pringles snackle">
+                    <img src="./img/Bunny.webp" alt="Kaningossedjur">
                     <h2>999kr</h2>
-                    <h2 class="Button" onclick="sendProductToCart('SnacklePringles')">Add to cart</h2>
+                    <h2 class="Button" onclick="sendProductToCart('Kaningossedjur')">Lägg till i kundvagnen</h2>
                 </div>
             </div>
-            <div id="SnackleHershy">
+            <div id="Hajgossedjur">
                 <div class="Products">
-                    <img src="./img/Hershy.webp" alt="Hershy snackle">
+                    <img src="./img/Shark.webp" alt="Hajgossedjur" onclick="updateCartAmmount()">
                     <h2>999kr</h2>
-                    <h2 class="Button" onclick="sendProductToCart('SnackleHershy')">Add to cart</h2>
+                    <h2 class="Button" onclick="sendProductToCart('Hajgossedjur')">Lägg till i kundvagnen</h2>
                 </div>
             </div>
-            <div id="SnackleBaskin">
+            <div id="Pingvingossedjur">
                 <div class="Products">
-                    <img src="./img/Baskin.webp" alt="Baskin snackle">
+                    <img src="./img/Penguin.webp" alt="Pingvingossedjur">
                     <h2>999kr</h2>
-                    <h2 class="Button" onclick="sendProductToCart('SnackleBaskin')">Add to cart</h2>
+                    <h2 class="Button" onclick="sendProductToCart('Pingvingossedjur')">Lägg till i kundvagnen</h2>
                 </div>
             </div>
-            <div id="SnackleChupa">
+            <div id="Kycklinggossedjur">
                 <div class="Products">
-                    <img src="./img/Chupa.webp" alt="Chupa snackle">
+                    <img src="./img/Chicken.webp" alt="Kycklinggossedjur">
                     <h2>999kr</h2>
-                    <h2 class="Button" onclick="sendProductToCart('SnackleChupa')">Add to cart</h2>
+                    <h2 class="Button" onclick="sendProductToCart('Kycklinggossedjur')">Lägg till i kundvagnen</h2>
                 </div>
             </div>
-            <div id="SnackleChicken">
+            <div id="Rävgossedjur">
                 <div class="Products">
-                    <img src="./img/Chicken.webp" alt="Pringles snackle">
+                    <img src="./img/Fox.webp" alt="Rävgossedjur">
                     <h2>999kr</h2>
-                    <h2 class="Button" onclick="sendProductToCart('SnackleChicken')">Add to cart</h2>
+                    <h2 class="Button" onclick="sendProductToCart('Rävgossedjur')">Lägg till i kundvagnen</h2>
                 </div>
             </div>
-            <div id="SnackleSauce">
+            <div id="Apgosedjur">
                 <div class="Products">
-                    <img src="./img/Sauce.webp" alt="Pringles snackle">
+                    <img src="./img/Monkey.webp" alt="Apgosedjur">
                     <h2>999kr</h2>
-                    <h2 class="Button" onclick="sendProductToCart('SnackleSauce')">Add to cart</h2>
+                    <h2 class="Button" onclick="sendProductToCart('Apgosedjur')">Lägg till i kundvagnen</h2>
                 </div>
             </div>
     <footer>
-        <h1>For support contact: <a href="mailto:Noreply@lindhardsen.org">Noreply@lindhardsen.org</a></h1>
+        <h1>För hjälp kontakta: <a href="mailto:Noreply@lindhardsen.org">Noreply@lindhardsen.org</a></h1>
     </footer>
 </body>
 </html>
